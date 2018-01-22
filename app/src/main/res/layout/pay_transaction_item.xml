@@ -1,0 +1,132 @@
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="3dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp">
+
+        <TextView
+            android:id="@+id/txtClientName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="26dp"
+            android:layout_marginTop="0dp"
+            android:text="CLIENT NAME"
+            android:textColor="#000"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/textView24"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/txtClientName"
+            android:layout_below="@+id/txtClientName"
+            android:layout_marginTop="8dp"
+            android:text="Invoice No."
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/txtInvoiceId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/textView31"
+            android:layout_toEndOf="@+id/textView24"
+            android:text="102920"
+            android:textColor="#000"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/textView31"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/textView24"
+            android:layout_below="@+id/textView24"
+            android:layout_marginTop="2dp"
+            android:text="Payment:"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/txtPaymode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/textView31"
+            android:layout_alignBottom="@+id/textView31"
+            android:layout_marginLeft="5dp"
+            android:layout_toEndOf="@+id/textView31"
+            android:text="TextView"
+            android:textColor="#000"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/textView33"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/textView31"
+            android:layout_below="@+id/textView31"
+            android:layout_marginTop="14dp" />
+
+        <TextView
+            android:id="@+id/txtAmount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/txtPaymode"
+            android:layout_alignBottom="@+id/txtPaymode"
+            android:layout_marginLeft="5dp"
+            android:layout_toEndOf="@+id/txtPaymode"
+            android:text="TextView"
+            android:textColor="#000"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/txtStatus"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:layout_alignTop="@+id/imgStatus"
+            android:layout_marginLeft="8dp"
+            android:layout_toEndOf="@+id/imgStatus"
+            android:text="TextView"
+            android:textColor="#000"
+            android:textSize="14sp" />
+
+        <ImageView
+            android:id="@+id/imgStatus"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignStart="@+id/textView33"
+            android:layout_below="@+id/textView31"
+            android:layout_marginTop="8dp"
+            app:srcCompat="@drawable/ic_save_black_24dp" />
+
+        <Button
+            android:id="@+id/btnView"
+            style="@style/Widget.AppCompat.Button.Borderless.Colored"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_below="@+id/txtStatus"
+            android:layout_marginBottom="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="-5dp"
+            android:text="VIEW TRANSACTION"
+            android:textColor="#3c8ced" />
+
+        <ImageView
+            android:id="@+id/imgPop"
+            android:layout_width="22dp"
+            android:layout_height="22dp"
+            android:layout_alignEnd="@+id/btnView"
+            android:layout_alignParentTop="true"
+            android:backgroundTint="#505050"
+            android:foregroundTint="#505050"
+            android:tint="#505050"
+            app:srcCompat="@drawable/dots" />
+
+    </RelativeLayout>
+</android.support.v7.widget.CardView>

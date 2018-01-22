@@ -1,0 +1,110 @@
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="3dp"
+    android:layout_marginTop="3dp">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#fff"
+        android:foregroundTint="#fff"
+        android:paddingBottom="5dp"
+        android:paddingRight="5dp"
+        android:paddingTop="5dp">
+
+        <TextView
+            android:id="@+id/txt_delivery_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/textView3"
+            android:layout_alignBottom="@+id/textView3"
+            android:layout_toEndOf="@+id/textView3"
+            android:text="Delivery ID"
+            android:textColor="#000"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="19dp"
+            android:layout_marginTop="12dp"
+            android:text="Delivery No."
+            android:textColor="#000"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/txt_status"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:layout_alignTop="@+id/imgStatus"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_toEndOf="@+id/imgStatus"
+            android:text="txtStatus"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/txt_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/textview2"
+            android:layout_alignBottom="@+id/textview2"
+            android:layout_marginStart="11dp"
+            android:layout_toEndOf="@+id/textview2"
+            android:text="date"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/textview2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/textView3"
+            android:layout_below="@+id/textView3"
+            android:layout_marginTop="8dp"
+            android:text="Date Delivered:"
+            android:textSize="16sp" />
+
+
+        <ImageView
+            android:id="@+id/imgPop"
+            android:layout_width="22dp"
+            android:layout_height="22dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignTop="@+id/txt_delivery_id"
+            android:backgroundTint="#606060"
+            android:foregroundTint="#606060"
+            android:src="@drawable/dots"
+            android:tint="#606060" />
+
+        <Button
+            android:id="@+id/btnTransaction"
+            style="@style/Widget.AppCompat.Button.Borderless.Colored"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/imgPop"
+            android:layout_alignTop="@+id/txt_status"
+            android:layout_marginTop="10dp"
+            android:elevation="0dp"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:text="VIEW TRANSACTION"
+            android:textColor="#3c8ced" />
+
+        <ImageView
+            android:id="@+id/imgStatus"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignStart="@+id/textview2"
+            android:layout_below="@+id/textview2"
+            android:layout_marginTop="8dp"
+            app:srcCompat="@drawable/ic_save_black_24dp" />
+
+    </RelativeLayout>
+
+</android.support.v7.widget.CardView>

@@ -1,0 +1,100 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="20dp">
+
+    <TextView
+        android:id="@+id/txtProduct"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:text="Product Name"
+        android:textColor="#000" />
+
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/txtProduct"
+        android:text="Lot No." />
+
+    <TextView
+        android:id="@+id/txtDelivery"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/text"
+        android:layout_alignBottom="@+id/text"
+        android:layout_toEndOf="@+id/text"
+        android:text="10225" />
+
+    <TextView
+        android:id="@+id/textView54"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/text"
+        android:text="Expiry: " />
+
+    <TextView
+        android:id="@+id/txtLotExpiry"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtDelivery"
+        android:layout_toEndOf="@+id/text"
+        android:text="TextView" />
+
+    <TextView
+        android:id="@+id/textView59"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/textView54"
+        android:text="Remaining:" />
+
+    <TextView
+        android:id="@+id/txtRemain"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtLotExpiry"
+        android:layout_toEndOf="@+id/textView59"
+        android:text="TextView" />
+
+    <EditText
+        android:id="@+id/etSold"
+        android:layout_width="75dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtProduct"
+        android:layout_marginRight="4dp"
+        android:layout_toStartOf="@+id/etWithdraw"
+        android:background="#eaeaea"
+        android:ems="10"
+        android:hint="0"
+        android:inputType="number"
+        android:padding="8dp"
+        android:textAlignment="center" />
+
+    <EditText
+        android:id="@+id/etWithdraw"
+        android:layout_width="75dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/etSold"
+        android:layout_alignBottom="@+id/etSold"
+        android:layout_alignParentEnd="true"
+        android:background="#eaeaea"
+        android:ems="10"
+        android:hint="0"
+        android:inputType="number"
+        android:padding="8dp"
+        android:textAlignment="center" />
+
+    <TextView
+        android:id="@+id/txtProId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:text="TextView"
+        android:visibility="invisible" />
+</RelativeLayout>

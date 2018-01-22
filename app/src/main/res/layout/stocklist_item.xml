@@ -1,0 +1,38 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="20dp"
+    android:paddingTop="20dp">
+
+    <TextView
+        android:id="@+id/txtClientName"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="25dp"
+        android:text="Client Name"
+        android:textColor="#000"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/txtClientAddress"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/txtClientName"
+        android:layout_below="@+id/txtClientName"
+        android:text="AddressAddressAddressAddressAddr" />
+
+    <TextView
+        android:id="@+id/txtClientQty"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/txtClientAddress"
+        android:layout_marginEnd="35dp"
+        android:layout_marginTop="-20dp"
+        android:text="100"
+        android:textColor="#000"
+        android:textSize="18sp" />
+
+</RelativeLayout>

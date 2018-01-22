@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/txtTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="26dp"
+            android:layout_marginTop="0dp"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView20"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/txtTitle"
+            android:layout_below="@+id/txtTitle"
+            android:layout_marginTop="-10dp"
+            android:text="Payment Mode"
+            android:textColor="@color/colorPrimary" />
+
+        <EditText
+            android:id="@+id/etAmount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/textView25"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:editable="false"
+            android:ems="10"
+            android:inputType="numberDecimal" />
+
+        <RadioGroup
+            android:id="@+id/radioGroupMode"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_below="@+id/textView20"
+            android:layout_marginTop="13dp">
+
+            <RadioButton
+                android:id="@+id/rdoCash"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="30dp"
+                android:layout_weight="1"
+                android:text="Cash Basis" />
+
+            <RadioButton
+                android:id="@+id/rdoPdc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="30dp"
+                android:layout_toEndOf="@+id/rdoCash"
+                android:layout_weight="1"
+                android:text="Post Dated Cheque" />
+
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/textview3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/textView20"
+            android:layout_below="@+id/radioGroupMode"
+            android:layout_marginTop="10dp"
+            android:text="Payment Details"
+            android:textColor="@color/colorPrimary" />
+
+        <TextView
+            android:id="@+id/textView25"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/textview3"
+            android:layout_below="@+id/textview3"
+            android:layout_marginTop="14dp"
+            android:text="Amount"
+            android:textColor="#000" />
+
+        <TextView
+            android:id="@+id/textView28"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/textView25"
+            android:layout_below="@+id/etAmount"
+            android:layout_marginTop="20dp"
+            android:text="PDC No."
+            android:textColor="#000" />
+
+        <EditText
+            android:id="@+id/etPdc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/textView28"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:ems="10"
+            android:inputType="textPersonName" />
+
+        <TextView
+            android:id="@+id/txtPaydate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/etPdc"
+            android:layout_below="@+id/etPdc"
+            android:layout_marginTop="20dp"
+            android:text="PDC Date"
+            android:textColor="#000" />
+
+        <EditText
+            android:id="@+id/etPdcDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/textView28"
+            android:layout_below="@+id/txtPaydate"
+            android:ems="10"
+            android:enabled="false"
+            android:inputType="date" />
+
+        <TextView
+            android:id="@+id/txtDateError"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/txtPaydate"
+            android:layout_marginLeft="5dp"
+            android:layout_toEndOf="@+id/txtPaydate"
+            android:text="N/A"
+            android:textColor="@android:color/holo_red_dark"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/txtPdcError"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/textView28"
+            android:layout_marginLeft="5dp"
+            android:layout_toEndOf="@+id/textView25"
+            android:text="N/A"
+            android:textColor="@android:color/holo_red_dark"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/textView34"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/textView25"
+            android:layout_marginLeft="5dp"
+            android:layout_toEndOf="@+id/textView25"
+            android:text="*"
+            android:textColor="@android:color/holo_red_dark"
+            android:textSize="14sp" />
+
+        <ImageButton
+            android:id="@+id/btnDate"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignTop="@+id/etPdcDate"
+            android:layout_toEndOf="@+id/etPdcDate"
+            android:background="@drawable/roundcorner"
+            android:scaleType="fitXY"
+            app:srcCompat="@drawable/calendar" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/etBank"
+            android:layout_marginBottom="20dp"
+            android:layout_marginTop="20dp">
+
+            <Button
+                android:id="@+id/btnSave"
+                style="@android:style/Widget.Material.Button.Colored"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/btnCancel"
+                android:layout_alignBottom="@+id/btnCancel"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="25dp"
+                android:layout_marginLeft="10dp"
+                android:text="Save" />
+
+            <Button
+                android:id="@+id/btnCancel"
+                style="@android:style/Widget.Material.Button.Borderless"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_toStartOf="@+id/btnSave"
+                android:text="Cancel"
+                android:textColor="@color/colorPrimary" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/textView17"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/etPdcDate"
+            android:layout_marginTop="20dp"
+            android:layout_toEndOf="@+id/txtTitle"
+            android:text="Bank"
+            android:textColor="#000" />
+
+        <EditText
+            android:id="@+id/etBank"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/textView17"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:ems="10"
+            android:inputType="textPersonName" />
+
+        <TextView
+            android:id="@+id/txtBankError"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/etBank"
+            android:layout_marginLeft="5dp"
+            android:layout_toEndOf="@+id/textView17"
+            android:text="N/A"
+            android:textColor="@android:color/holo_red_dark" />
+
+    </RelativeLayout>
+</ScrollView>

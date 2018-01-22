@@ -1,0 +1,83 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="10dp"
+    android:paddingLeft="20dp"
+    android:paddingRight="18dp">
+
+    <TextView
+        android:id="@+id/txtClient"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:paddingTop="20dp"
+        android:text="Client Name"
+        android:textColor="#000"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/txtSyncStatus"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:layout_alignTop="@+id/imgStatus"
+        android:layout_marginRight="5dp"
+        android:layout_toEndOf="@+id/imgStatus"
+        android:text="TextView" />
+
+    <TextView
+        android:id="@+id/txtDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textView66"
+        android:layout_alignBottom="@+id/textView66"
+        android:layout_toEndOf="@+id/textView66"
+        android:text="txtDate"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/textView66"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/txtClient"
+        android:layout_marginTop="3dp"
+        android:text="Date:  "
+        android:textSize="15sp" />
+
+    <ImageView
+        android:id="@+id/imgStatus"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/textView66"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="8dp"
+        android:backgroundTint="@color/colorPrimary"
+        android:backgroundTintMode="src_over"
+        app:srcCompat="@drawable/ic_save_black_24dp" />
+
+    <ImageView
+        android:id="@+id/btnPopup"
+        android:layout_width="22dp"
+        android:layout_height="22dp"
+        android:layout_alignBottom="@+id/txtClient"
+        android:layout_alignParentEnd="true"
+        android:backgroundTint="#606060"
+        android:foregroundTint="#606060"
+        android:tint="#606060"
+        app:srcCompat="@drawable/dots" />
+
+    <Button
+        android:id="@+id/btnView"
+        style="@style/Widget.AppCompat.Button.Borderless.Colored"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/txtSyncStatus"
+        android:layout_marginRight="-8dp"
+        android:layout_marginTop="-10dp"
+        android:text="VIEW TRANSACTION"
+        android:textColor="#3c8ced" />
+</RelativeLayout>

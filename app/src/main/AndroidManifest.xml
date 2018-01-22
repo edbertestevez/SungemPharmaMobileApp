@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.sungem.sungempharma">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    \
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <!-- To auto-complete the email text field in the login form with the user's emails -->
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.READ_PROFILE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/logo_orig"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/logo_orig"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".Others.SplashActivity"
+            android:theme="@style/Theme.AppCompat.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <service android:name=".Medrep.Service.SungemService" />
+
+        <receiver
+            android:name=".Medrep.Service.ServiceBroadcastReceiver"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.sungem.ServiceBroadcastReceiver" />
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:name=".Others.MainSelectionActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Others.LoginActivity"
+            android:theme="@style/Theme.AppCompat.NoActionBar"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".Admin.AdminMainActivity"
+            android:label="@string/title_activity_admin_main"
+            android:windowSoftInputMode="adjustNothing" />
+        <activity
+            android:name=".Medrep.MedrepMainActivity"
+            android:label="@string/title_activity_medrep_main"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".Medrep.Delivery.DeliveryItemActivity" />
+        <activity
+            android:name=".Medrep.Payment.InvoiceItemActivity"
+            android:label="@string/title_activity_invoice_item"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".Medrep.StockLevel.StockListActivity" />
+        <activity android:name=".Medrep.StockLevel.StockItemLotActivity" />
+        <activity
+            android:name=".Medrep.StockLevel.MonitorStockActivity"
+            android:windowSoftInputMode="adjustPan" />
+        <activity android:name=".Medrep.StockLevel.TransactionSelectedActivity" />
+        <activity android:name=".Admin.Stocks.SelectedStockActivity" />
+        <activity android:name=".Admin.Sales.SalesReportActivity" />
+        <activity android:name=".Medrep.Delivery.DeliveryTransactionItemActivity" />
+        <activity android:name=".Medrep.Dashboard.SalesMedrepActivity" />
+        <activity android:name=".Medrep.Dashboard.MedrepExpiryActivity" />
+        <activity android:name=".Admin.Dashboard.ConsignSalesActivity" />
+        <activity android:name=".Admin.Dashboard.RestockActivity" />
+        <activity android:name=".Admin.Dashboard.AdminExpiryActivity"></activity>
+    </application>
+
+</manifest>

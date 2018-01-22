@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_dashboard"
+            android:icon="@drawable/ic_home_black_24dp"
+            android:title="Dashboard" />
+        <item
+            android:id="@+id/nav_stocklevel"
+            android:icon="@drawable/ic_menu_camera"
+            android:title="Stock Level Inventory" />
+        <item
+            android:id="@+id/nav_delivery"
+            android:icon="@drawable/ic_menu_gallery"
+            android:title="Delivery" />
+        <item
+            android:id="@+id/nav_payment"
+            android:icon="@drawable/ic_menu_slideshow"
+            android:title="Payment" />
+        <item
+            android:id="@+id/nav_performance"
+            android:icon="@drawable/ic_menu_manage"
+            android:title="My Performance" />
+        <item
+            android:id="@+id/nav_profile"
+            android:icon="@drawable/ic_menu_share"
+            android:title="Profile" />
+        <item
+            android:id="@+id/nav_logout"
+            android:icon="@drawable/ic_dashboard_black_24dp"
+            android:title="Logout" />
+    </group>
+
+</menu>

@@ -1,0 +1,128 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="10dp"
+    android:paddingTop="8dp">
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout4"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignBottom="@+id/txtClient"
+            android:layout_alignTop="@+id/txtProBrand"
+            android:layout_toEndOf="@+id/txtProBrand"
+            android:paddingBottom="10dp">
+
+                <TextView
+                    android:id="@+id/textView85"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_below="@+id/txtQty"
+                    android:text="Qty"
+                    android:textAlignment="center"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/txtQty"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="20dp"
+                    android:text="10"
+                    android:textAlignment="center"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="32sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/txtDays"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_below="@+id/textView85"
+                    android:layout_marginTop="2dp"
+                    android:text="TextView"
+                    android:textAlignment="center"
+                    android:textColor="@android:color/holo_red_dark"
+                    android:textStyle="bold"
+                    android:visibility="invisible" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/txtProBrand"
+            android:layout_width="280dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:text="TextView"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/txtProGenericFormulation"
+            android:layout_width="280dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtProBrand"
+            android:layout_toStartOf="@+id/relativeLayout4"
+            android:text="TextView" />
+
+        <TextView
+            android:id="@+id/txtLotDesc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/txtProGenericFormulation"
+            android:layout_below="@+id/txtProGenericFormulation"
+            android:layout_marginTop="11dp"
+            android:text="Lot No.:"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/txtExpiryDesc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/txtExpiry"
+            android:layout_alignBottom="@+id/txtExpiry"
+            android:layout_alignStart="@+id/txtLotDesc"
+            android:text="Expiry Date"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/txtClient"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/txtExpiryDesc"
+            android:layout_marginBottom="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="10dp"
+            android:layout_toStartOf="@+id/relativeLayout4"
+            android:text="TextView"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/txtLot"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/txtLotDesc"
+            android:layout_marginLeft="5dp"
+            android:layout_toEndOf="@+id/txtLotDesc"
+            android:text="sample" />
+
+        <TextView
+            android:id="@+id/txtExpiry"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtLot"
+            android:layout_marginLeft="5dp"
+            android:layout_toEndOf="@+id/txtExpiryDesc"
+            android:text="sample" />
+
+</RelativeLayout>
